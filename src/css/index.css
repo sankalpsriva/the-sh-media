@@ -1,0 +1,113 @@
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+} 
+
+.title {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 1;
+}
+
+.text {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    font-size: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(255, 0, 0, 1);
+    user-select: none;
+    z-index: 1;
+}
+
+.intro {
+    margin-top: 200px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    top: calc(50% - 50px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.row {
+    display: contents;
+}
+
+.column {
+    background-color: lightgray;
+    padding: 20px;
+    margin-left: 50px;
+    height: 200px; 
+    width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: black; 
+    border: 1px solid black;
+}
+
+
+.row .column:nth-child(5) {
+    transform: translateX(50%);
+    grid-column: 1 / 2;
+}
+
+.row .column:nth-child(6) {
+    transform: translateX(50%);
+    grid-column: 2 / 3;
+}
+
+.row .column:nth-child(7) {
+    transform: translateX(50%);
+    grid-column: 3 / 4;
+}
+.position {
+    margin-top: 10px;
+    font-size: 14px;
+    color: gray;
+}
+
+
+.about {
+    margin-top: 25px;
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+}
+
+.about-text {
+    text-align: center;
+}
