@@ -135,18 +135,17 @@
     text-align: center;
 }
 
-
-
-
 .intro-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    position: relative;
     gap: 10px;
     margin-top: 20px;
 }
 
 .row {
     display: contents;
+    position: relative;
 }
 
 .pos-text {
@@ -205,8 +204,25 @@
     text-align: center;
 }
 
+.socials {
+    margin-top: 75px;
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+}
+
 .about-text {
     text-align: center;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 20px;
+}
+
+.contact-info {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 30px;
+    text-align: left;
 }
 
 .services-container {
@@ -214,6 +230,12 @@
     justify-content: space-around; /* Distribute items evenly */
     gap: 10px;
     margin-top: 20px;
+}
+
+.services-text {
+    font-size: 20px;
+    font-family: "Roboto Slab", sans-serif;
+    text-align: center;
 }
 
 .service-item {
